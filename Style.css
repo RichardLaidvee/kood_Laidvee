@@ -1,0 +1,41 @@
+body {
+    font-family: 'Times new roman', sans-serif;
+    margin: 0;
+    padding: 5;
+    background-color: #c73d7d;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(40, 199, 61);
+    color: rgb(252, 250, 250);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.donut-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.donut {
+    background-color: rgb(27, 65, 236);
+    color: rgb(252, 250, 250);
+    border: 1px solid rgb(247, 22, 22);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(62, 100, 226, 0.1);
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.donut img {
+    width: 100%;
+    border-radius: 5px;
+}
