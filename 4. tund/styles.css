@@ -1,0 +1,33 @@
+body {
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.box:nth-child(odd) {
+    background-color: #d03434;
+    font-family: 'Monotype Corsiva', cursive;
+    font-size: 18px;
+    text-align: center;
+}
