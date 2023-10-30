@@ -136,3 +136,14 @@ function harjutus14(inimesed) {
     }
 }
 
+
+harjutus1("Jüri");
+harjutus2("Toyota", "Corolla", "hall");
+console.log(harjutus4("Elizabeth"));
+console.log(harjutus5("tere"));
+harjutus6();
+harjutus7();
+harjutus11([3, 5, 4, 3, 4, 5, 3, 4, 2]);
+harjutus12();
+harjutus13(["Marek", "Kadri", "Jüri"]);
+harjutus14(inimesed);
