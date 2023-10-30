@@ -2,17 +2,20 @@
 function harjutus1(nimi) {
     console.log("Tere, " + nimi + "!");
 }
+harjutus1("Jüri");
 
 // Ülesanne 2
 function harjutus2(mark, mudel, värv) {
     console.log("Minu auto on " + värv + " " + mark + " " + mudel + ".");
 }
+harjutus2("Toyota", "Corolla", "hall");
 
 // Ülesanne 3
 function harjutus3(põhjaPindala, kõrgus) {
     let ruumala = (põhjaPindala * kõrgus) / 3;
     console.log("Püramiidi ruumala on " + ruumala + ".");
 }
+console.log(harjutus3(10, 15));
 
 // Ülesanne 4
 function harjutus4(nimi) {
@@ -22,11 +25,13 @@ function harjutus4(nimi) {
         return nimi;
     }
 }
+console.log(harjutus4("Elizabeth"));
 
 // Ülesanne 5
 function harjutus5(sõne) {
     return sõne.split('').reverse().join('');
 }
+console.log(harjutus5("tere"));
 
 // Ülesanne 6
 function harjutus6() {
@@ -34,6 +39,7 @@ function harjutus6() {
         console.log(i);
     }
 }
+harjutus6();
 
 // Ülesanne 7
 function harjutus7() {
@@ -43,6 +49,7 @@ function harjutus7() {
         i--;
     }
 }
+harjutus7();
 
 // Ülesanne 10
 let myNameComponents = ['Samuel', 'L', 'Jackson'];
@@ -57,6 +64,7 @@ function harjutus11(hinded) {
     let keskmine = summa / hinded.length;
     console.log("Keskmine hinne on " + keskmine + ".");
 }
+harjutus11([3, 5, 4, 3, 4, 5, 3, 4, 2]);
 
 // Ülesanne 12
 function harjutus12() {
@@ -72,6 +80,7 @@ function harjutus12() {
         }
     }
 }
+harjutus12();
 
 // Ülesanne 13
 function harjutus13(massiiv) {
@@ -81,6 +90,7 @@ function harjutus13(massiiv) {
         console.log("Marek pole massiivis");
     }
 }
+harjutus13(["Marek", "Kadri", "Jüri"]);
 
 // Ülesanne 14
 let inimesed = [
@@ -135,15 +145,15 @@ function harjutus14(inimesed) {
         console.log("E-post sisaldab sõna 'eesti': " + eestiEmail.nimi);
     }
 }
-
-
-harjutus1("Jüri");
-harjutus2("Toyota", "Corolla", "hall");
-console.log(harjutus4("Elizabeth"));
-console.log(harjutus5("tere"));
-harjutus6();
-harjutus7();
-harjutus11([3, 5, 4, 3, 4, 5, 3, 4, 2]);
-harjutus12();
-harjutus13(["Marek", "Kadri", "Jüri"]);
 harjutus14(inimesed);
+
+
+
+
+
+
+
+
+
+
+
