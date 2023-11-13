@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arvamismäng</title>
+</head>
+<body>
+  <h1>Arvamismäng</h1>
+  <p>Proovi ära arvata juhuslikult genereeritud arv vahemikus 1 kuni 100.</p>
+
+  <script>
+    // Genereerime juhusliku arvu vahemikus 1-100
+    const targetNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    while (true) {
+      const userGuess = parseInt(prompt("Sisesta oma arvamus (1-100):"));
+
+      if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+        alert("Palun sisesta arv vahemikus 1-100.");
+      } else {
+        attempts++;
+        
+        if (userGuess < targetNumber) {
+          alert("Sinu arv on liiga väike. Proovi uuesti!");
+        } else if (userGuess > targetNumber) {
+          alert("Sinu arv on liiga suur. Proovi uuesti!");
+        } else {
+          alert(`Õige! Arvasid ära arvu ${targetNumber} ${attempts} katsega.`);
+          break;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
