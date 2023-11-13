@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List</title>
+</head>
+<body>
+    <h1>Shopping List</h1>
+
+    <input type="text" id="item" placeholder="Add food item" required>
+    <button id="addItem">Add</button>
+
+    <ul id="shopping-list">
+        <!-- Shopping list items will be added here -->
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("addItem").onclick = function() {
+                const newParagraph = document.createElement('p');
+                let myul = document.getElementById("shopping-list");
+                
+                newParagraph.textContent = document.getElementById("item").value;
+                myul.appendChild(newParagraph);
+            }
+        })
+    </script>
+</body>
+</html>
