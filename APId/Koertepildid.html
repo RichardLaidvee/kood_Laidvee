@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juhuslikud Koerapildid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Juhuslik Koerapilt</h1>
+    <img id="dogImage" src="" alt="Juhuslik koerapilt" width="500">
+    <button onclick="getDogImage()">Laadi uus pilt</button>
+
+    <script>
+        const dogApiUrl = 'https://api.thedogapi.com/v1/images/search';
+
+        async function getDogImage() {
+            try {
+                const response = await fetch(dogApiUrl);
+                const data = await response.json();
+                const dogImage = document.getElementById('dogImage');
+                dogImage.src = data[0].url;
+            } catch (error) {
+                console.error('Koerapildi pärimisel tekkis viga:', error);
+            }
+        }
+
+        getDogImage();
+    </script>
+</body>
+</html>

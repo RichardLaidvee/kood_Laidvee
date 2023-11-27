@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilmaandmete Päring</title>
+</head>
+<body>
+    <h1>Ilmaandmete Päring</h1>
+    <input type="text" id="cityInput" placeholder="Sisesta linna nimi">
+    <button onclick="getWeather()">Päri ilma</button>
+    <div id="weather"></div>
+
+    <script>
+        const apiKey = 'b1ea1a8e89cfd9a0329102568f84080d';
+
+        async function getWeather() {
+            const city = document.getElementById('cityInput').value;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const weather = document.getElementById('weather');
+                if (data.main) {
+                    weather.innerHTML = `<p>Temperatuur: ${data.main.temp}°C</p>
+                                         <p>Tuulekiirus: ${data.wind.speed} m/s</p>
+                                         <p>Õhuniiskus: ${data.main.humidity}%</p>`;
+                } else {
+                    weather.innerHTML = `<p>Linna ei leitud. Palun proovi uuesti.</p>`;
+                }
+            } catch (error) {
+                console.error('Ilmateabe pärimisel tekkis viga:', error);
+            }
+        }
+    </script>
+</body>
+</html>
