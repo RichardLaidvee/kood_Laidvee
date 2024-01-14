@@ -1,0 +1,64 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar stiilid */
+  .navbar {
+    background-color: #007bff !important;
+  }
+  
+  .navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  /* Hero sektsiooni stiilid */
+  .hero {
+    background: url('https://www.emic.ee/failid/genPictures/thumb_x_280/1522055165.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em;
+  }
+  
+  /* About sektsiooni stiilid */
+  #about {
+    padding: 50px 0;
+  }
+  
+  #about h2 {
+    color: #007bff;
+  }
+  
+  /* Profile sektsiooni stiilid */
+  #profile {
+    padding: 50px 0;
+  }
+  
+  #profile h2 {
+    color: #007bff;
+  }
+  
+  /* Kontakti sektsiooni stiilid */
+  #contact {
+    padding: 50px 0;
+  }
+  
+  #contact h2 {
+    color: #007bff;
+  }
+  
+  /* Footer stiilid */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
