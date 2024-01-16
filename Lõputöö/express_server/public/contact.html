@@ -1,32 +1,98 @@
-<!-- contact.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Raimond Valgre - Kontakt</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valrgest</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2196F3;
+            padding: 10px;
+            color: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            flex-grow: 1;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0d47a1;
+        }
+
+        .content-box {
+            background-color: #FFD54F;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Raimond Valgre</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="/">Avaleht</a></li>
-      <li><a href="/about">Teave</a></li>
-      <li><a href="/profile">Profiil</a></li>
-      <li><a href="/contact">Kontakt</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Kontakt Raimond Valgre Veebilehega</h2>
-    <p>Jätke meile tagasisidet või võtke meiega ühendust.</p>
-    <!-- Lisage siia kontaktivorm -->
-  </main>
-  <footer>
-    <p>&copy; 2024 Raimond Valgre Veeb</p>
-  </footer>
+
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <h1>Contact information</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/profile">Profile</div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <p>Author's email: laidvee.r@gmail.com</p>
+    </div>
+
 </body>
 </html>

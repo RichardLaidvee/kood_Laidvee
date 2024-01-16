@@ -1,32 +1,143 @@
-<!-- about.html -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Raimond Valgre - Teave</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valgrest</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2196F3;
+            padding: 10px;
+            color: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            flex-grow: 1;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0d47a1;
+        }
+
+        .content-box {
+            background-color: #FFD54F;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Raimond Valgre</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="/">Avaleht</a></li>
-      <li><a href="/about">Teave</a></li>
-      <li><a href="/profile">Profiil</a></li>
-      <li><a href="/contact">Kontakt</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Teave Raimond Valgre kohta</h2>
-    <p>Raimond Valgre oli Eesti helilooja ja muusik, sündinud 1913. aastal.</p>
-    <!-- Lisage siia Raimond Valgre tutvustav sisu -->
-  </main>
-  <footer>
-    <p>&copy; 2024 Raimond Valgre Veeb</p>
-  </footer>
+
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <h1>Raimond Valgrest</h1>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/profile">Profile</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-box">
+        <p>Raimond Valgre on kirjutanud üle 100 laulu. Tema looming sai populaarseks alles pärast tema surma (algul tänu Georg Otsale jt. lauljatele) ning on püsinud paljude tuntud artistide repertuaaris. Rohkesti on tema muusika salvestisi Eesti Rahvusringhäälingus, kogumik- ja autoriplaatidel, sh. LP ''Raimond Valgre'' (Melodija, 1987) ja CD-d ''Raimond Valgre laule'' (esit. U. Lattikas; Forte, 1993), ''Raimond Valgre laulud läbi viie aastakümne'' (ER, 1996), ''Annan sul suud, härra Valgre'' (Katrin Karisma ja Tõnu Kilgas Eesti Kaitseväe Orkestri saatel, dir. Peeter Saan, 1996), ''Sinilintu'' (Anita Heino, Sirje Medell ja Finest Sextet, 1996), ''Raimond Valgre'' (Sulev Luik, 1997), ''Raimond Valgre laule'' (Karavan, 1997), ''Üksi'' (A.-L. Poll, T. Kalluste, A. Varts ja T. Remmel, 1999), ''Muinaslugu muusikas'' (T. Paulus, 2001), ''Pleased to Meet You, Mr. Valgre'' (Francis Goya, 2001), ''Eesti kullafond. Raimond Valgre'' (3 CD-d, 2003), ''Swing mind ikka lohutab'' (Modern Fox, 2003) ja ''Nüüd laulmas iga tund…'' (Eesti TA Naiskoor ja Inseneride Meeskoor; ERCD, 2003). Valgre loomingust on ilmunud mitu laulukogumikku, (1959, 1964, 1988, 1993, 2002, 2005). Valgre laulude põhjal on loodud muusikal ''Muinaslugu muusikas'' (libreto Ülo Raudmäe, Sulev Nõmmik ja Enn Vetemaa, esietendus 1967 Estonias), tema elu ja loomingut käsitlevad telefilm ''Igavesti Teie'' (režissöör Mati Põldre, käsikiri Lembit Lauri, 1976), näidend ''Valgre tee kutse'' (lavastaja Kaarel Kilvet, esietendus 1985 Noorsooteatris) ning mängufilm ''Need vanad armastuskirjad'' (režissöör Mati Põldre, 1992; CD 1993, DVD 2003). Tartu Karlova Gümnaasiumis on aastast 1988 korraldatud Raimond Valgre laulufestivali ja aastast 1998 ka kultuurinädalat ning Pärnus aastast 2002 festivali ''Kummardus Valgrele''.</p>
+        <img src="https://i.imgur.com/RjHTMaH.jpg" alt="Portree" />
+    </div>
+
+    <div id="quoteContainer">
+        <h2>Quotes:</h2>
+        <div id="quoteList"></div>
+        <button onclick="getQuotes()">Get Quotes</button>
+    </div>
+
+    <script>
+        async function getQuotes() {
+            const url = 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=2';
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': 'ba963a4e3emsh225bcc1c64385d6p1d0690jsnfcccdafbf798',
+                    'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com'
+                }
+            };
+
+            try {
+                const response = await fetch(url, options);
+                const result = await response.text();
+                displayQuotes(result);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        function displayQuotes(quotes) {
+            const quoteContainer = document.getElementById('quoteList');
+            quoteContainer.innerHTML = '';
+
+            if (Array.isArray(quotes)) {
+                quotes.forEach((quote, index) => {
+                    const quoteElement = document.createElement('p');
+                    quoteElement.textContent = `Quote ${index + 1}: ${quote.text} - ${quote.author}`;
+                    quoteContainer.appendChild(quoteElement);
+                });
+            } else {
+                console.error('Invalid quotes format');
+            }
+        }
+    </script>
 </body>
+
 </html>
